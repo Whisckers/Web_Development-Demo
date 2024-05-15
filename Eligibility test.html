@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voter Eligibility Test</title>
+  <link rel="stylesheet" href="Elig.css">
+  
+  <nav>
+      <a href="Commissioners.html"><img src="Botswana.png" alt="Botswana" width = 300 height = 300 /></a>
+	  <br>
+	  <br>
+	  <br>
+	  
+   </nav>
+    <div class="watermark">
+	<a href="Commissioners.html"><img src="botswanam.png" alt="coat" width = 300 height = 300 /></a>
+   </div>
+     <a href="HOME PAGE.html"><button id="Dashboard">Home</button></a>
+</head>
+<body>
+  <h1>Voter Eligibility Test</h1>
+  <form id="eligibility-form">
+    <p><b>I. Are you a citizen of Botswana?</b></p>
+    <input type="radio" id="citizen-yes" name="citizen" value="yes"> Yes<br>
+    <input type="radio" id="citizen-no" name="citizen" value="no"> No<br><br>
+    <p><b>II. Will you be 18 years or older on the election day?</b></p>
+    <input type="radio" id="age-yes" name="age" value="yes"> Yes<br>
+    <input type="radio" id="age-no" name="age" value="no"> No<br><br>
+    <button type="button" onclick="checkEligibility()">Check Eligibility</button>
+  </form>
+  <p id="message"></p>
+  <script>
+    function checkEligibility() {
+      const citizen = document.querySelector('input[name="citizen"]:checked').value;
+      const age = document.querySelector('input[name="age"]:checked').value;
+
+      let message = "";
+
+      if (citizen === "yes" && age === "yes") {
+        message = "Congratulations! You are eligible to vote.";
+      } else {
+        message = "Unfortunately, you are not eligible to vote at this time.";
+      }
+
+      document.getElementById("message").textContent = message;
+    }
+  </script>
+   
+    <a href="home page.html"><button id="cancel-button">Cancel</button></a>
+   <a href="voters form.html"><button id="next">Next</button></a>
+  <br>
+<br>
+<br>
+<br>
+ <footer> 
+  <p>Copyright © 2024 IEC Botswana. All Rights Reserved.
+         Designed by E.P-Links<br><br>Contacts<br><br>TELEPHONE: (+267 361 2400)<br>Toll Free Number: 0800 123 45</p>
+		 <a href="home page.html"><img src="rabit.png" alt="coat" width = 120 height = 120 /></a>
+  </footer>
+  <br>
+<br>
+<br>
+<br>
+   <a href="home page.html"style="position: absolute; right: 25px;"><img src="picfoot.png" alt="coat" width = 250 height = 80 /></a>
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<body style="background-color: rgb(255, 248, 221);"</body>
+</html>

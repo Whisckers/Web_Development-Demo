@@ -1,0 +1,125 @@
+
+ <nav>
+      <a href="Commissioners.html"><img src="Botswana.png" alt="Botswana" width = 300 height = 300 /></a>
+	  <br>
+	  <br>
+	  <br>
+	    <a href="HOME PAGE.html"><button id="Dashboard">Home</button></a>
+   	  <br>
+	  <br>
+	  <br>
+   </nav>
+    <div class="watermark">
+	<img src="botswanam.png" alt="coat" width = 950 height = 950 /></a>
+   </div>
+  <H1>Declaration Form</H1>
+<form id="voter-declaration">
+  
+  <link rel="stylesheet" href="DECL.css">
+
+	  
+ <table style = "border: 2px solid black";>
+   <th>Voter Declaration - read and agree/disagree</th>
+  <tr>
+   <td>   .</td>
+ </tr>
+ <tr>
+ <td><li>I am a citizen of Botswana.</li></td>
+ </tr>
+ 
+  <tr>
+ <td><li>I live in the Constituency I am registering at.</li></td>
+ </tr>
+ 
+  <tr>
+ <td><li>I will be 18 years old on or before Election date.</li></td>
+</tr>
+
+ <tr>
+ <td><li>I have not been judged “mentally incompetent from the Court of Law”</li></td>
+   </tr>
+   <tr>
+   <td>   .</td>
+ </tr>
+ 
+   <tr>
+   <td>   .</td>
+ </tr>
+ 
+ <tr>
+ <td>I agree Or I Disagree<input size = "5" type="checkbox" id="activate-declaration" required></td>
+  <td> <label for="date">Date: </label> <input size = "5" type="date" name="dateOfBirth" id="dateOfBirth" size="15" maxlength="30"></td>
+   </tr> 
+   
+   
+   </table>
+   <br>
+   <br>
+   
+  <input type="radio" name="declaration" id="agree" value="agree"> Agree<br>
+  <br>
+  <input type="radio" name="declaration" id="disagree" value="disagree"> Disagree
+  <br>
+  <br>
+  <button type="button" onclick="submitForm()">Submit</button>
+   <button id="cancel-button"><a href="home page.html">Cancel my vote</a></button>
+ 
+</form>
+
+
+  <script>
+
+    function showSummary() {
+      const name = document.getElementById("myForm").elements.name.value;
+      const email = document.getElementById("myForm").elements.email.value;
+
+      document.getElementById("summaryName").textContent = name;
+      document.getElementById("summaryEmail").textContent = email;
+
+      document.getElementById("myForm").style.display = "none";
+      document.getElementById("summary").style.display = "block";
+    }
+
+    function submitForm() {
+      const confirmSubmission = confirm("Are you sure you want to submit the form?");
+
+      if (confirmSubmission) {
+        // Submit the form data (replace with your actual submission logic)
+        alert("Thank you for your vote!");
+      }
+    }
+ 
+  </script>
+<p id="message"></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+	   <footer> 
+  <p>Copyright © 2024 IEC Botswana. All Rights Reserved.
+         Designed by E.P-Links<br><br>Contacts<br><br>TELEPHONE: (+267 361 2400)<br>Toll Free Number: 0800 123 45</p>
+		 <a href="home page.html"><img src="rabit.png" alt="coat" width = 120 height = 120 /></a>
+  </footer>
+<br>
+<br>
+
+   <a href="home page.html"style="position: absolute; right: 25px;"><img src="picfoot.png" alt="coat" width = 250 height = 80 /></a>
+</body>
+<br>
+<br>
+
+<body style="background-color: rgb(255, 248, 221);"</body>
+ <br>
+<br>
+
+<p id="message"></p>

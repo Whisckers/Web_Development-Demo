@@ -1,0 +1,166 @@
+
+<html>
+
+  <head>
+    <title>IEC BW Voters Form</title>
+	<!-- the title is the name of the web page on the web browser tab. -->
+	     <link rel="stylesheet" href="Votecred.css">
+
+	</head>
+	
+	 <nav>
+      <a href="voter Credidentials.html"><img src="Botswana.png" alt="Botswana" width = 300 height = 300 /></a>
+      <h1>Voter details</h1>
+   </nav>
+  
+  <a href="HOME PAGE.html"><button id="Dashboard">Home</button></a>
+  <br>
+   <br>
+  <body>
+  <label for="Omang ID No">Omang ID No</label>
+  <input type="text" id="Omang ID No" maxlength="9" placeholder="050..."><br><br>
+  </body>
+ 
+   <body>
+   <div class="watermark">
+	<a href="voters form.html"><img src="botswanam.png" alt="botswana" width = 750 height = 750 /></a>
+   </div>
+ 
+   Date of Issue: 
+   <input type = "Date" name = "date of issue" size "15" maxlength "30"><br/><br/>
+   <!-- end of the html document. -->
+  </body>
+
+  </body>
+  
+   <body>
+   Date of Expiry: 
+   <input type = "Date" name = "Date of Expiry" size "15" maxlength "30"><br/><br/>
+   
+  </body>
+  
+  <body>
+  Gender: 
+    <br>
+    <input type="radio" id="citizen" name="nationality" value="Citizen"> Citizen
+    <input type="radio" id="dual citizen" name="nationality" value="Dual Citizen"> Dual Citizen<br><br>
+   <!-- end of the html document. -->
+  </body>
+  
+  <body>
+  <label for="Voter Card No">Voter Card No</label>
+  <input type="text" id="Voter Card No" maxlength="9" placeholder="050..."><br><br>
+  </body>
+  
+  <body>
+   Polling Station: 
+   <input type = "text" station = "Station" size "15" maxlength "30" placeholder = "station"><br/><br/>
+   <!-- end of the html document. -->
+    
+    <label for="make">Constituency:</label>
+    <select id="make" name="make">
+      <option value="">Select Your Constituency</option>
+      <option value="Bobirwa North">Bobirwa North</option>
+      <option value="Serowe">Serowe</option>
+      <option value="Letlhakane">Letlhakane</option>
+      <option value="other">Other (please specify)</option>
+</select>
+	<br>
+	<br>
+	<br>
+    <label for="model">Area</label>
+	 <option value="">Select Your voting Station</option>
+    <select id="model" name="model">
+
+       <option value="other">Other (please specify)</option>
+      </select>
+<input type="text" id="other_vehicle" name="other_vehicle" placeholder="Enter Other Vehicle Type" hidden>
+
+
+	  <script>
+  const makeSelect = document.getElementById('make');
+  const modelSelect = document.getElementById('model');
+
+  // Define model data as an object (replace with your actual data)
+  const carModels = {
+    "Bobirwa North": ["Motlhabaneng", "Lentswelemoriti", "Lepokole", "Molalatau", "Gobojango", "Mabolwe","Semolale", "Tshokwe", "Tobane"],
+    "Letlhakane": ["Orapa", "Mmatshumo", "Mosu", "Makgaba", "Mokubilo" ,"Mokoboxane", 'Kedia',
+    'Mopipi', 'Mmadikola', 'Rakops', 'Toromoja', 'Moreomaoto', 'Khumaga', 'Xere', 'Xhumo', 'Makalamabedi', 'Motopi',"Mmea"],
+    "Serowe": ['Paje','Sehunou' , 'Tshimoyapula','Thabala' , 'Mabeleapodi','Mogorosi','Motshegaletau','Moiyabana']};
+	
+	 function updateModelOptions() {
+    const selectedMake = makeSelect.value;
+    modelSelect.innerHTML = ""; // Clear existing options
+
+    if (selectedMake) {
+      const availableModels = carModels[selectedMake];
+      if (availableModels) {
+        availableModels.forEach(model => {
+          const option = document.createElement('option');
+          option.value = model;
+          option.text = model;
+          modelSelect.appendChild(option);
+        });
+      } else {
+        // Handle case where no models available for selected make (optional)
+        const option = document.createElement('option');
+        option.value = "";
+        option.text = "No models available";
+        modelSelect.appendChild(option);
+      }
+    }
+  }
+
+  // Call updateModelOptions on page load and whenever make selection changes
+  updateModelOptions();
+  makeSelect.addEventListener('change', updateModelOptions);
+</script>
+  </body>
+  
+  <h2>Upload Omang Document</h2>
+  <form action="upload_script.php" method="post" enctype="multipart/form-data">
+  <label for="upload_file">Select File:</label>
+  <input type="file" id="upload_file" name="upload_file" required accept=".pdf,.docx,.xlsx">
+  <br>
+   <p> The front and back copy should be uploaded</p>
+  <p>Allowed file types: PDF, DOCX, XLSX (Max file size: 10MB)</p>
+  </form>
+
+  <h2>Upload Voter Card</h2>
+  <form action="upload_script.php" method="post" enctype="multipart/form-data">
+  <label for="upload_file">Select File:</label>
+  <input type="file" id="upload_file" name="upload_file" required accept=".pdf,.docx,.xlsx">
+  <br>
+  <p> The front and back copy should be uploaded</p>
+  <p>Allowed file types: PDF, DOCX, XLSX (Max file size: 10MB)</p>
+  </form>
+
+  </body>
+   <button id="previous-button"><a href="voters form.html">Previous</a></button>
+   <button id="next-button"><a href="DECLARATION FORM.html">Next</a></button>
+   <button id="cancel-button"><a href="home page.html">Cancel</a></button>
+
+
+  
+  <br>
+<br>
+<br>
+<br>
+   <footer> 
+  <p>Copyright © 2024 IEC Botswana. All Rights Reserved.
+         Designed by E.P-Links<br><br>Contacts<br><br>TELEPHONE: (+267 361 2400)<br>Toll Free Number: 0800 123 45</p>
+		 <a href="home page.html"><img src="rabit.png" alt="coat" width = 120 height = 120 /></a>
+  </footer>
+<br>
+<br>
+
+   <a href="home page.html"style="position: absolute; right: 25px;"><img src="picfoot.png" alt="coat" width = 250 height = 80 /></a>
+</body>
+<br>
+<br>
+
+<body style="background-color: rgb(255, 248, 221);"</body>
+ <br>
+<br> 
+  
+</html>

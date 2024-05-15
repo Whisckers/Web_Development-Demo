@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+	
+	 background-color: skyblue;  / Dark green color *
+	 border: 10px #2E8B57; 
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 80px;
+	width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 18px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: rgb(135, 206, 235);
+    color: black;
+	font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(	135, 206, 235);
+}
+body
+{
+	 border: 20px solid skyblue;
+     font-family: Arial, sans-serif;
+	 font-size:18px; 
+}
+.watermark {
+  position: absolute;  /* Position the watermark element */
+  top: 85%;  /* Center vertically (adjust as needed) */
+  left: 60%;  /* Center horizontally (adjust as needed) */
+  transform: translate(-50%, -50%);  /* Center the element within its space */
+  opacity: 0.25; /* Adjust opacity for watermark visibility */
+  width: 65%; /* Adjust width as needed */
+  /* Optionally add a background color if using a text watermark */
+}
+
+.watermark img {
+  width: 100%; /* Stretch image to fill watermark container */
+}
+
+label, select {
+  margin-right: 10px;  /* Add some space between labels and dropdowns */
+}
+
+   /* Footer styles */
+    footer {
+      background-color: rgb(63,63,63); /* Set footer background color to blue */
+      color: white; /* Set footer text color to white */
+	  padding: 4px; /* Add padding for content within the footer */
+	  text-align: Center;
+	  padding-left: 44px;
+	  margin-top: 30px;
+	  margin-bottom: 30px;
+	   /* margin-right: 40px;*/
+	  /* margin-left: 1px;*/
+	   
+	 width: 97%; /* Extend footer to the right margin 
+    }

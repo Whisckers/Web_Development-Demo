@@ -1,0 +1,117 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+	
+	 background-color: skyblue;  / Dark green color *
+	 border: 10px solid #2E8B57; 
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 80px;
+	width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 18px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: rgb(135, 206, 235);
+    color: black;
+	font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(	135, 206, 235);
+}
+body
+{
+	 border: 10px solid skyblue; 
+}
+.watermark {
+  position: absolute;  /* Position the watermark element */
+  top: 65%;  /* Center vertically (adjust as needed) */
+  left: 60%;  /* Center horizontally (adjust as needed) */
+  transform: translate(-50%, -50%);  /* Center the element within its space */
+  opacity: 0.5; /* Adjust opacity for watermark visibility */
+  width: 65%; /* Adjust width as needed */
+  /* Optionally add a background color if using a text watermark */
+}
+
+.watermark img {
+  width: 100%; /* Stretch image to fill watermark container */
+}
+
+label, select {
+  margin-right: 10px;  /* Add some space between labels and dropdowns */
+ 
+}
+footer {
+  background-color: rgb(63,63,63);
+  color: white;
+  padding: 4px;
+  text-align: center;
+  padding-left: 10px;
+  margin-top: 10px;
+  width: 96%; }
+
+.commissioner-container {
+  /* Style the table container as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Optional: Set minimum height for full viewport */
+  font-weight: bold;
+}
+
+
+.commissioner-container table {
+  border-collapse: collapse; /* Remove default cell spacing */
+  width: 60%; /* Stretch table to full width */
+ 
+}
+
+.commissioner-container th,
+.commissioner-container td {
+  border: 0px solid #ddd; /* Add table borders */
+  padding: 13px; /* Add padding to cells */
+  text-align: left; /* Align text to left by default */
+}
+
+.commissioner-container tr:nth-child(even) {
+  background-color: none; /* Alternate row background color */
+}
+
+.image-container {
+  text-align: center; /* Center image and captions vertically */
+}
+
+.commissioner-container-wrapper {
+  display: flex;
+  justify-content: space-between; /* Spread images evenly in row 2 */
+  /* Optional: Add margin or padding for spacing */
+}
